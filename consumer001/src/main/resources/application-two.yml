@@ -1,0 +1,18 @@
+
+#端口号
+server:
+  port: 12002
+ 
+#应用名称 
+spring:
+  application:
+    name: eureka-consumer
+  
+#注册中心地址   
+eureka:
+  instance:
+    instance-id:  eureka-consumer2
+    appname:  ${spring.application.name}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka/

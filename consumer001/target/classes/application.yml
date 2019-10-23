@@ -1,0 +1,28 @@
+
+#端口号
+server:
+  port: 12001
+ 
+#应用名称 
+spring:
+  application:
+    name: eureka-consumer
+  
+#注册中心地址   
+eureka:
+  instance:
+    instance-id:  eureka-consumer1
+    appname:  ${spring.application.name}
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:10000/eureka/
+      
+#配置随机负载均衡策略
+#eureka-server:
+#  ribbon:
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+    
+#配置轮询负载均衡策略（默认） 
+eureka-server:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
