@@ -1,6 +1,8 @@
 package com.caogang.entity;
 
 import java.math.BigDecimal;
+import java.util.Date;
+
 import lombok.Data;
 
 /** 
@@ -15,6 +17,7 @@ public class Student {
 	private String name;
 	private Integer age;
 	private BigDecimal salary;
+	private Date birthday;
 	private String sex;
 	
 }
