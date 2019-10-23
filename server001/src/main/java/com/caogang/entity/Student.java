@@ -15,5 +15,6 @@ public class Student {
 	private String name;
 	private Integer age;
 	private BigDecimal salary;
+	private String sex;
 	
 }
