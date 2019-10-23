@@ -18,10 +18,8 @@ public class Student {
 	private Integer age;
 	private BigDecimal salary;
 	private Date birthday;
-<<<<<<< HEAD
 	private String addr;
-=======
 	private String sex;
->>>>>>> refs/remotes/origin/branch001
+
 	
 }
