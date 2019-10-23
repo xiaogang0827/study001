@@ -18,5 +18,6 @@ public class Student {
 	private Integer age;
 	private BigDecimal salary;
 	private Date birthday;
+	private String addr;
 	
 }
