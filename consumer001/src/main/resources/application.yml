@@ -26,3 +26,8 @@ eureka:
 eureka-server:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+
+#打开Feign自带的Hystrix做服务降级 
+feign:
+  hystrix:
+    enabled: true

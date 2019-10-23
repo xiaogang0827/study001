@@ -1,4 +1,6 @@
 
+#--spring.profiles.active=two
+
 #端口号
 server:
   port: 12002

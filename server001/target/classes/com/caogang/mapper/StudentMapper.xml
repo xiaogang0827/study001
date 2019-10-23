@@ -18,6 +18,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<select id="selectSalaryById" resultType="BigDecimal">
 		select salary from student where id = #{id}
 	</select>
+	
+	<select id="selectOneById" resultType="student">
+		select * from student where id = #{id}
+	</select>
 
 
 

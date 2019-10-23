@@ -16,4 +16,6 @@ public interface StudentService {
 
 	BigDecimal selectSalaryById(Integer id);
 
+	Student selectOneById(Integer id);
+
 }

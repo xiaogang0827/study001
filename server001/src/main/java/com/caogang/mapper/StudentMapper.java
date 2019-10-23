@@ -20,4 +20,6 @@ public interface StudentMapper {
 	
 	BigDecimal selectSalaryById(@Param("id")Integer id);
 
+	Student selectOneById(@Param("id")Integer id);
+
 }

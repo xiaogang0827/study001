@@ -39,4 +39,9 @@ public class StudentServiceImpl implements StudentService{
 		return studentMapper.selectSalaryById(id);
 	}
 
+	@Override
+	public Student selectOneById(Integer id) {
+		return studentMapper.selectOneById(id);
+	}
+
 }
